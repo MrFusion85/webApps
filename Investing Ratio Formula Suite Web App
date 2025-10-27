@@ -1,0 +1,427 @@
+<!-- Created by Charlie Mitchell
+Copyright 2018, 2025
+Definitions sourced from www.investopedia.com -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Investing Ratio Formula Suite</title>
+    </head>
+    <body>
+        <h1><b>WELCOME</b></h1>
+        <h2>TO THE</h2>
+        <h2>INVESTING RATIO</h2>
+        <h2>FORMULA SUITE</h2>
+        <br />
+        
+        <p><h3>1. Earnings Per Share (EPS)</h3></p>
+        <p> Before you can understand many of these ratios, it is important to learn what earnings per share (EPS) is. EPS is basically the profit that a company has made over the last year divided by how many shares are on the market. It gets a little more complicated because you don't include preferred shares when calculating — only common shares. <br />
+<br />
+Also, the number of shares outstanding could change throughout the year. But don't worry, this number will be given to you on any financial website.</p>
+        <p>eps = past year's profits / shares on the market</p>
+        <p>eps = p / s</p>
+        
+        <p>Please enter the company's profits earned over the last year (p):
+            <input type="number" id="epsp" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter the number of shares available on the market (s):
+            <input type="number" id="epss" />
+            </input>
+            <br />
+        </p>
+        
+        <input type="submit" onclick="eps()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>2. Price To Earnings Ratio</h3></p>
+        <p> The price/earnings ratio (P/E) is the best known of the investment valuation indicators. The P/E ratio — though it has its imperfections — is the most widely reported and used valuation by investment professionals and the investing public. A high P/E ratio means investors are paying more for today's earnings in anticipation of future earnings growth.<br />
+<br />
+The basic formula for calculating the P/E ratio is fairly standard. There is never a problem with the numerator — an investor can obtain a current stock price from various sources, and they'll all generate the same dollar figure (which, of course, is a per-share number).<br />
+<br />
+However, there are a number of variations in the numbers used for the EPS figure in the denominator. The most commonly used EPS dollar figures include the following:<br />
+<br />
+<b>Basic earnings per share:</b> based on the past 12 months. <br />
+<br />
+<b>Estimated basic earnings per share:</b> based on a forward 12-month projection.</p>
+        <p>P/E = current stock price / earnings per share</p>
+        <p>pe = p / eps</p>
+        
+        <p>Please enter the current stock price (p):
+            <input type="number" id="perp" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter the company's eps (eps):
+            <input type="number" id="pere" />
+            </input>
+            <br />
+        </p>
+        <input type="submit" onclick="per()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>3. Price To Sales Ratio</h3></p>
+        <p> A stock's price/sales ratio (P/S ratio) is another stock valuation indicator similar to the P/E ratio. The P/S ratio measures the price of a company's stock against its annual sales, instead of earnings. Like the P/E ratio, the P/S reflects how many times investors are paying for every dollar of a company's sales.</p>
+        <p>price to shares ratio = stock price per share / (net sales (revenue) / average shares outstanding for the year)</p>
+        <p>ps = p / (r / s)</p>
+        
+        <p>Please enter the stock price per share (p):
+            <input type="number" id="psrp" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter the amount of revenue (r):
+            <input type="number" id="psrr" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter the average number of shares outstanding for the year (s):
+            <input type="number" id="psrs" />
+            </input>
+            <br />
+        </p>
+        
+        <input type="submit" onclick="psr()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>4. Debt-To-Equity Ratio</h3></p>
+        <p> The debt-equity ratio is a leverage ratio that compares a company's total liabilities to its total shareholders' equity. This is a measurement of how much suppliers, lenders, creditors and obligors have committed to the company versus what the shareholders have committed. A lower number means that a company is using less leverage and has a stronger equity position.<br />
+<br />
+This ratio is not a pure measurement of a company's debt because it includes operational liabilities in the calculation of total liabilities. Nevertheless, this easy-to-calculate ratio provides a general indication of a company's equity-liability relationship.</p>
+        <p>debt-to-equity ratio = liabilities / equity</p>
+        <p>r = l / e;</p>
+        
+        <p>Please enter your total amount of liabilities (l):</p>
+            <input type="number" id="dterl" />
+            </input>
+            <br />
+        
+        <p>Please enter your total amount of equity (e):</p>
+            <input type="number" id="dtere" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="dter()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>5. Dividend Yield Ratio</h3></p>
+        <p>A stock's dividend yield is expressed as an annual percentage and is calculated as the company's annual cash dividend per share divided by the current price of the stock. The dividend yield is often found in the display of stock quotes for dividend-paying companies. Investors should note that stock quotes record the per share dollar amount of a company's latest quarterly declared dividend.</p>
+        <p>dividend yield = annual cash dividend per share / current stock price</p>
+        <p>dy = d / p;</p>
+        
+        <p>Please enter the annual cash dividend payment (d):</p>
+            <input type="number" id="dyrd" />
+            </input>
+            <br />
+        
+        <p>Please enter the current stock price (p):</p>
+            <input type="number" id="dyrp" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="dyr()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>6. Price to Book Ratio</h3></p>
+        <p>The price-to-book ratio (P/B) compares a stock's per-share price (market value) to its book value (shareholders' equity). The price-to-book value ratio, expressed as a multiple (i.e. how many times a company's stock is trading per share compared to the company's book value per share), is an indication of how much shareholders are paying for the net assets of a company.<br />
+<br />
+"Price-to-book", provides investors a way to compare the market value —or what they are paying for each share — to a conservative measure of the value of the firm.</p>
+        <p>price to book ratio = current stock price / current book value per share</p>
+        <p>p/b = p / b</p>
+        
+        <p>Please enter the current stock price (p):</p>
+            <input type="number" id="pbrp" />
+            </input>
+            <br />
+        
+        <p>Please enter the current book value per share (b):</p>
+            <input type="number" id="pbrb" />
+            </input>
+            <br />
+            
+        <input type="submit" onclick="pbr()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>7. Payout Ratio</h3></p>
+        <p>The dividend payout ratio tells you how much profit goes out in dividends. This ratio identifies the percentage of earnings (net income) per common share allocated to paying cash dividends to shareholders. The dividend payout ratio is an indicator of how well earnings support the dividend payment.<br />
+<br />
+Dividends are paid at the discretion of management, if the percentage is too high (over about 75%), then the dividend could be cut. If the result is low, then the dividend payment could continue into the future.</p>
+        <p>payout ratio = dividends per share / eps</p>
+        <p>por = d / eps;</p>
+        
+        <p>Please enter the amount of dividends paid per share (d):</p>
+            <input type="number" id="pord" />
+            </input>
+            <br />
+        
+        <p>Please enter the earnings per share (eps):</p>
+            <input type="number" id="pore" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="por()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>8. Current Ratio</h3></p>
+        <p>The current ratio is a popular financial ratio used to test a company's liquidity — also referred to as its current or working capital position — by deriving the proportion of current assets available to cover current liabilities. The concept behind this ratio is to ascertain whether a company's short-term assets (cash, cash equivalents, marketable securities, receivables, and inventory) are readily available to pay off its short-term liabilities (notes payable, current portion of term debt, payables, accrued expenses, and taxes). In theory, the higher the current ratio, the better.</p>
+        <p>current ratio = current assets / current liabilities</p>
+        <p>c = a / l;</p>
+        
+        <p>Please enter the amount of current assets (a):</p>
+            <input type="number" id="cra" />
+            </input>
+            <br />
+        
+        <p>Please enter the amount of current liabilities (l):</p>
+            <input type="number" id="crl" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="cr()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>9. Simple Interest Calculator</h3></p>
+        <p>ending amount = principle × (1 + (interest rate × time))</p>
+        <p>a = p * (1 + (r * t));</p>
+        
+        <p>Please enter the principle amount (p):</p>
+            <input type="number" id="sicp" />
+            </input>
+            <br />
+        
+        <p>Please enter the interest rate (as a decimal) (r):</p>
+            <input type="number" id="sicr" />
+            </input>
+            <br />
+        
+        <p>Please enter the amount of time (in years) (t):</p>
+            <input type="number" id="sict" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="sic()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>10. Compound Interest Calculator</h3></p>
+        <p>ending amount = principle × ((1 +(interest rate / number of times compounded)) ^ (number of times compounded × time))</p>
+        <p>a = p × ((1 + (r / n)) ^ (n × t));</p>
+        
+        <p>Please enter the principle amount (p):</p>
+            <input type="number" id="cicp" />
+            </input>
+            <br />
+        
+        <p>Please enter the interest rate (as a decimal) (r):</p>
+            <input type="number" id="cicr" />
+            </input>
+            <br />
+        
+        <p>Please enter the number of times compounded per year (n):</p>
+            <input type="number" id="cicn" />
+            </input>
+            <br />
+        
+        <p>Please enter the amount of time (in years) (t):</p>
+            <input type="number" id="cict" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="cic()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+    </body>
+</html>
+
+
+<!--
+
+CSS:
+
+/* Created by Charlie Mitchell
+Copyright 2018, 2025
+Definitions sourced from www.investopedia.com */
+
+
+body {
+    background-color: #000000;
+    color: #00ff00;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    color: #ffffff;
+}
+
+
+JavaScript:
+
+// Created by Charlie Mitchell
+// Copyright 2018, 2025
+// Definitions sourced from www.investopedia.com
+
+
+// earnings per share
+
+function eps(epsp, epss) {
+    var epsp = document.getElementById('epsp').value;
+    var epss = document.getElementById('epss').value;
+    var epsa = +epsp / +epss;
+    alert("The company's earnings per share = $" + epsa);
+    }
+
+// price to earnings ratio
+
+function per(perp, pere) {
+    var perp = document.getElementById('perp').value;
+    var pere = document.getElementById('pere').value;
+    var perpe = +perp / +pere;
+    alert("The company's current price to earnings ratio = $" + perpe + " per share.");
+    }
+
+// price to sales ratio
+
+function psr(psrp, psrr, psrs) {
+    var psrp = document.getElementById('psrp').value;
+    var psrr = document.getElementById('psrr').value;
+    var psrs = document.getElementById('psrs').value;
+    var psrps = +psrp / (+psrr / +psrs);
+    alert("Your price to sales ratio is " + psrps);
+    }
+
+// debt-to-equity ratio
+
+function dter(dterl, dtere) {
+    var dterl = document.getElementById('dterl').value;
+    var dtere = document.getElementById('dtere').value;
+    var dterx = +dterl / +dtere;
+    var dterr = +dterx * 100;
+    alert("Your current debt-to-equity ratio is " + dterr + "%");
+    }
+
+// dividend yield ratio
+
+function dyr(dyrd, dyrp) {
+    var dyrd = document.getElementById('dyrd').value;
+    var dyrp = document.getElementById('dyrp').value;
+    var dyrx = +dyrd / +dyrp;
+    var dyry = +dyrx * 10000
+    var dyrz = Math.round(dyry)
+    var dyrdy = dyrz / 100
+    alert("Your dividend yield " + dyrdy + "%");
+    }
+
+// price to book ratio
+
+function pbr(pbrp, pbrb) {
+    var pbrp = document.getElementById('pbrp').value;
+    var pbrb = document.getElementById('pbrb').value;
+    var pbrpb = +pbrp / +pbrb;
+    alert("Your price to book value is " + pbrpb + "x.");
+    }
+
+// payout ratio
+
+function por(pord, pore) {
+    var pord = document.getElementById('pord').value;
+    var pore = document.getElementById('pore').value;
+    var porx = +pord / +pore;
+    var pory = +porx * 10000;
+    var porz = Math.round(+pory)
+    var porp = +porz / 100
+    alert("Your current payout ratio is " + porp + "%");
+    }
+
+// current ratio
+
+function cr(cra, crl) {
+    var cra = document.getElementById('cra').value;
+    var crl = document.getElementById('crl').value;
+    var crr = +cra / +crl;
+    alert("Your current ratio is " + crr);
+    }
+
+// simple interest calculator
+
+function sic(sicp, sicr, sict) {
+    var sicp = document.getElementById('sicp').value;
+    var sicr = document.getElementById('sicr').value;
+    var sict = document.getElementById('sict').value;
+    var sica = +sicp * (1 + (+sicr * +sict));
+    alert("Your principle contribution of $" + sicp + ", will grow to $" + sica + " after " + sict + " years.");
+    }
+
+// compound interest calculator
+
+function cic(cicp, cicr, cicn, cict) {
+    var cicp = document.getElementById('cicp').value;
+    var cicr = document.getElementById('cicr').value;
+    var cicn = document.getElementById('cicn').value;
+    var cict = document.getElementById('cict').value;
+    var cicx = +cicp * ((1 + (+cicr / +cicn)) ** (+cicn * +cict));
+    var cicb = +cicx * 100
+    var cicc = Math.round(+cicb)
+    var cica = +cicc / 100
+    alert("Your principle contribution of $" + cicp + ", will grow to $" + cica + " after " + cict + " years.");
+    }
+
+-->
