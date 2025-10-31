@@ -1,0 +1,372 @@
+<!-- Created by Charlie Mitchell
+Assistance from bobbie & Richard Myatt
+Copyright 2018, 2025 -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Business Accounting Formula Suite</title>
+    </head>
+    <body>
+        <h1><b>WELCOME</b></h1>
+        <h2>TO THE</h2>
+        <h2>BUSINESS ACCOUNTING</h2>
+        <h2>FORMULA SUITE</h2>
+        <br />
+        
+        <p><h3>1. Basic Accounting Equation</h3></p>
+        <p>assets = liabilities + equity</p>
+        <p>a = l + e</p>
+        
+        <p>Please enter your amount of liabilities (l):
+            <input type="number" id="bael" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter your amount of equity (e):
+            <input type="number" id="baee" />
+            </input>
+            <br />
+        </p>
+        
+        <input type="submit" onclick="bae()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>2. Net Income Equation</h3></p>
+        <p>income = revenues - expenses</p>
+        <p>i = r - e</p>
+        
+        <p>Please enter your total amount of revenues (r):
+            <input type="number" id="nier" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter your total amount of expenses (e):
+            <input type="number" id="niee" />
+            </input>
+            <br />
+        </p>
+        <input type="submit" onclick="nie()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>3. Break-Even Point Equation</h3></p>
+        <p>break-even point = fixed costs / (sales price per unit - variable cost per unit)</p>
+        <p>b = f / (p - c)</p>
+        
+        <p>Please enter your total amount of fixed costs (f):
+            <input type="number" id="bepf" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter your sales price per unit (p):
+            <input type="number" id="bepp" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter your variable costs per unit (c):
+            <input type="number" id="bepc" />
+            </input>
+            <br />
+        </p>
+        
+        <input type="submit" onclick="bep()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>4. Cash Ratio</h3></p>
+        <p>cash ratio = cash & equivalents / current liabilities</p>
+        <p>r = c / l</p>
+        
+        <p>Please enter your total amount of cash and cash equivalents (c):
+            <input type="number" id="crec" />
+            </input>
+            <br />
+        </p>
+        
+        <p>Please enter your total amount of current liabilities (l):
+            <input type="number" id="crel" />
+            </input>
+            <br />
+        </p>
+        
+        <input type="submit" onclick="cre()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>5. Profit Margin</h3></p>
+        <p>profit margin = net income / total sales</p>
+        <p>m = i / s;</p>
+        
+        <p>Please enter your net income (i):</p>
+            <input type="number" id="pmei" />
+            </input>
+            <br />
+        
+        <p>Please enter your total of sales (s):</p>
+            <input type="number" id="pmes" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="pme()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>6. COGS</h3></p>
+        <p>cost of goods sold = beginning inventory + amount of purchases - ending inventory</p>
+        <p>c = b + p - e;</p>
+        
+        <p>Please enter your beginning inventory (b):</p>
+            <input type="number" id="cogsb" />
+            </input>
+            <br />
+        
+        <p>Please enter your total amount of purchases (p):</p>
+            <input type="number" id="cogsp" />
+            </input>
+            <br />
+        
+        <p>Please enter your ending inventory (e):</p>
+            <input type="number" id="cogse" />
+            </input>
+            <br />
+            <br />
+            
+        <input type="submit" onclick="cogs()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>7. Debt-To-Equity Ratio</h3></p>
+        <p>debt-to-equity ratio = liabilities / equity</p>
+        <p>r = l / e;</p>
+        
+        <p>Please enter your total amount of liabilities (l):</p>
+            <input type="number" id="dterl" />
+            </input>
+            <br />
+        
+        <p>Please enter your total amount of equity (e):</p>
+            <input type="number" id="dtere" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="dter()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>8. Simple Interest Calculator</h3></p>
+        <p>ending amount = principle × (1 + (interest rate × time))</p>
+        <p>a = p * (1 + (r * t));</p>
+        
+        <p>Please enter the principle amount (p):</p>
+            <input type="number" id="sicp" />
+            </input>
+            <br />
+        
+        <p>Please enter the interest rate (as a decimal) (r):</p>
+            <input type="number" id="sicr" />
+            </input>
+            <br />
+        
+        <p>Please enter the amount of time (in years) (t):</p>
+            <input type="number" id="sict" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="sic()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+        
+        <p><h3>9. Compound Interest Calculator</h3></p>
+        <p>ending amount = principle × ((1 +(interest rate / number of times compounded)) ^ (number of times compounded × time))</p>
+        <p>a = p × ((1 + (r / n)) ^ (n × t));</p>
+        
+        <p>Please enter the principle amount (p):</p>
+            <input type="number" id="cicp" />
+            </input>
+            <br />
+        
+        <p>Please enter the interest rate (as a decimal) (r):</p>
+            <input type="number" id="cicr" />
+            </input>
+            <br />
+        
+        <p>Please enter the number of times compounded per year (n):</p>
+            <input type="number" id="cicn" />
+            </input>
+            <br />
+        
+        <p>Please enter the amount of time (in years) (t):</p>
+            <input type="number" id="cict" />
+            </input>
+            <br />
+            <br />
+        
+        <input type="submit" onclick="cic()">
+        </input>
+        
+        <br />
+        <br />
+        <br />
+    </body>
+</html>
+
+<!-- CSS:
+
+/* Created by Charlie Mitchell
+Assistance from bobbie & Richard Myatt
+Copyright 2018, 2025 */
+
+
+body {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    color: #ffffff;
+}
+
+
+JavaScript:
+
+// Created by Charlie Mitchell
+// Assistance from bobbie & Richard Myatt
+// Copyright 2018, 2025
+
+
+// basic accounting equation
+
+function bae(bael, baee) {
+    var bael = document.getElementById('bael').value;
+    var baee = document.getElementById('baee').value;
+    var baea = +bael + +baee;
+    alert("Your total amount of assets = $" + baea);
+    }
+
+// net income equation
+
+function nie(nier, niee) {
+    var nier = document.getElementById('nier').value;
+    var niee = document.getElementById('niee').value;
+    var niei = +nier - +niee;
+    alert("Your net income is = $" + niei);
+    }
+
+// break-even point equation
+
+function bep(bepf, bepp, bepc) {
+    var bepf = document.getElementById('bepf').value;
+    var bepp = document.getElementById('bepp').value;
+    var bepc = document.getElementById('bepc').value;
+    var bepb = +bepf / (+bepp - +bepc);
+    alert("Your break-even point is " + bepb + "units.");
+    }
+
+// cash ratio equation
+
+function cre(crec, crel) {
+    var crec = document.getElementById('crec').value;
+    var crel = document.getElementById('crel').value;
+    var crex = +crec / +crel;
+    var crer = +crex * 100
+    alert("Your current cash ratio is = " + crer + "%");
+    }
+    
+// profit margin equation
+
+function pme(pmei, pmes) {
+    var pmei = document.getElementById('pmei').value;
+    var pmes = document.getElementById('pmes').value;
+    var pmem = +pmei / +pmes;
+    alert("Your profit margin is $" + pmem + " per unit.");
+    }
+
+// COGS
+
+function cogs(cogsb, cogsp, cogse) {
+    var cogsb = document.getElementById('cogsb').value;
+    var cogsp = document.getElementById('cogsp').value;
+    var cogse = document.getElementById('cogse').value;
+    var cogsx = +cogsb + +cogsp - +cogse;
+    alert("Your cost of goods sold is $" + cogsx);
+    }
+
+// debt-to-equity ratio
+
+function dter(dterl, dtere) {
+    var dterl = document.getElementById('dterl').value;
+    var dtere = document.getElementById('dtere').value;
+    var dterx = +dterl / +dtere;
+    var dterr = +dterx * 100;
+    alert("Your current debt-to-equity ratio is " + dterr + "%");
+    }
+
+// simple interest calculator
+
+function sic(sicp, sicr, sict) {
+    var sicp = document.getElementById('sicp').value;
+    var sicr = document.getElementById('sicr').value;
+    var sict = document.getElementById('sict').value;
+    var sica = +sicp * (1 + (+sicr * +sict));
+    alert("Your principle contribution of $" + sicp + ", will grow to $" + sica + " after " + sict + " years.");
+    }
+
+// compound interest calculator
+
+function cic(cicp, cicr, cicn, cict) {
+    var cicp = document.getElementById('cicp').value;
+    var cicr = document.getElementById('cicr').value;
+    var cicn = document.getElementById('cicn').value;
+    var cict = document.getElementById('cict').value;
+    var cicx = +cicp * ((1 + (+cicr / +cicn)) ** (+cicn * +cict));
+    var cicb = +cicx * 100
+    var cicc = Math.round(+cicb)
+    var cica = +cicc / 100
+    alert("Your principle contribution of $" + cicp + ", will grow to $" + cica + " after " + cict + " years.");
+    }
+
+-->
