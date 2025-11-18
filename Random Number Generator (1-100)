@@ -1,0 +1,31 @@
+<!-- Copyright Charlie Mitchell 2017, 2025 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Number Generator</title>
+    </head>
+    <body>
+        <p>Here's a random number:</p><br>
+        <script>
+            var number = Math.random();
+                number *= 100
+                number = Math.round(number)
+                document.write(number);
+        </script>
+    </body>
+</html>
+
+
+<!--
+
+CSS:
+p {
+    font-size: 50px;
+    color: red;
+    background-color: black;
+    padding: 6px;
+    font-family: Arial;
+}
+
+-->
