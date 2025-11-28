@@ -1,0 +1,27 @@
+<!-- Copyright Charlie Mitchell 2017, 2025 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <button id="demo">Click Me</button>
+    </body>
+</html>
+
+
+
+<!--
+
+JavaScript:
+
+//calling the function in window.onload to make sure the HTML is loaded
+window.onload = function() {
+    var x = document.getElementById('demo');
+    x.onclick = function () {
+        document.body.innerHTML = Date();
+    }
+};
+
+-->
