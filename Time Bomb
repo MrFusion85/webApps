@@ -1,0 +1,43 @@
+<!-- Copyright Charlie Mitchell 2017, 2025 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Bomb</title>
+    </head>
+    <body>
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+body {
+    font-family: 'courier new', cursive, 'Handlee', Arial;
+    font-size: 120pt;
+    color: #ff0000;
+    background-color: #000000;
+    padding: 5px;
+}
+
+
+
+
+
+JavaScript:
+
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
+
+-->
