@@ -1,0 +1,40 @@
+<!-- Copyright Charlie Mitchell 2025 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Toggle</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body>
+        <p>Hit the button to toggle the class.</p>
+        <button>Toggle Class</button>
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+JavaScript:
+
+$(function() {
+    $("button").click(function() {
+        $("p").toggleClass("red");
+    });
+});
+
+-->
