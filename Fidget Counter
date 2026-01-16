@@ -1,0 +1,72 @@
+<!-- Copyright Charlie Mitchell 2018, 2026 -->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>The Original Fidget Counter</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </head>
+    <body>
+    <h1>FIDGET COUNTER</h1>
+    <br>
+    <br>
+    <div ng-app="myApp" ng-controller="fidgetCounter">
+    <button ng-click="count=count+1">CLICK AWAY!</button>
+    <p>{{ count }}</p>
+    </div><hr>
+        <script>
+        var app = angular.module('myApp', []);
+        app.controller('fidgetCounter', function($scope) {
+            $scope.count = 0;
+        });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+body {
+    color: #ff0000;
+    background-color: #000000;
+}
+
+h1 {
+    color: #ff0000;
+    align: center;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 42px;
+    font-family: arial;
+}
+
+button {
+    width: 320px;
+    height: 200px;
+    align: center;
+    text-align: center;
+    font-weight: 15px;
+    font-style: #ff0000;
+    color: #ff0000;
+    background-color: #222;
+    font-size: 54px;
+    font-family: arial;
+    border-style: inline-block;
+}
+
+p { 
+    text-align: center ;
+    text-transform: bold;
+    border-radius: 7px;
+    border: 3px;
+    font-size: 72px;
+    font-family: arial;
+    color: #ff0000;
+}
+
+-->
