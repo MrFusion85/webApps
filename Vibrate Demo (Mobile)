@@ -1,0 +1,102 @@
+<!-- Copyright Charlie Mitchell 2018, 2026 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vibrate Demo</title>
+    </head>
+    <body>
+    <div align="center">
+    <h1>Vibration Buttons</h1><br />
+    
+        <button onclick="buzz1()">1 Second
+        </button><br />
+        <br />
+        <br />
+
+        <button onclick="buzz2()">1/2 Second
+        </button><br />
+        <br />
+        <br />
+
+        <button onclick="buzz3()">1/3 Second
+        </button><br />
+        <br />
+        <br />
+
+        <button onclick="buzz4()">1/4 Second
+        </button><br />
+        <br />
+        <br />
+
+        <button onclick="buzz5()">1/8 Second
+        </button><br />
+        <br />
+        <br />
+
+        <button onclick="buzz6()">< 1/16 Second
+        </button><br />
+    </div>
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+/* Created by Charlie Mitchell */
+
+html {
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+h1 {
+    color: #fff000;
+}
+
+button {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+
+
+
+
+JavaScript:
+
+// Created by Charlie Mitchell
+
+    function buzz1() {
+    navigator.vibrate(1000);
+    }
+    
+    function buzz2() {
+    navigator.vibrate(500);
+    }
+    
+    function buzz3() {
+    navigator.vibrate(333);
+    }
+    
+    function buzz4(){    
+    navigator.vibrate(250);
+    }
+    
+    function buzz5() {    
+    navigator.vibrate(125);
+    }
+    
+    function buzz6() {    
+    navigator.vibrate(60);
+    }
+
+-->
