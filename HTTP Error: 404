@@ -1,0 +1,94 @@
+<!-- Copyright Charlie Mitchell 2018, 2026 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <title> HTTP Error: 404</title>
+    </head>
+    <body>
+        <h1 class="error">HTTP Error: 404</h1>
+        <div class="alert">
+        <p class="text" id="a">The webserver cannot find the page or script you requested.<br>
+        <br>Please check the URL to ensure that the path is correct.<br>
+        <br>Please contact the server's administrator if this problem persists.
+        </p>
+        </div>
+        <br>
+           <h1 class="error">404!</h1>
+           <div class="head" align="center">
+           <br>
+          <b><p class="face" id="le">><</p>
+           <p class="face" id="re">><</p>
+           <p class="face">_________<sub>^</sub>____</p></b>
+           </div>
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+/* Copyright Charlie Mitchell 2018, 2026 */
+
+body {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+.text {
+font-family: 'Inconsolata', monospace;
+}
+
+.error {
+font-family: 'Inconsolata', monospace;
+}
+
+.alert {
+    margin: 0 auto;
+    width: 85%;
+    height: 170px;
+    background-color: lightgrey;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Inconsolata', monospace;
+}
+
+#a {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#le{
+    margin: 0 auto;
+    margin-left: -55px;
+}
+
+#re{
+    margin: 0 auto;
+    margin-right: -55px;
+    margin-top: -16px;
+}
+
+.head{
+    width: 170px;
+    height: 95px;
+    background-color: lightblue;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 20px solid navy;
+    color: grey;
+}
+
+.face{
+    color: black;
+}
+
+-->
