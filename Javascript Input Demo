@@ -1,0 +1,42 @@
+<!-- Created by Charlie Mitchell
+Copyright 2018, 2026 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <input type="text" id="userInput"=>Your input here.
+        </input>
+        <button onclick="test()">Submit</button>
+        <script> function test() { var userInput = document.getElementById("userInput").value; document.write(userInput); } </script>
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+/* Created by Charlie Mitchell
+Copyright 2018, 2026 */
+
+body {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+
+
+
+
+JavaScript:
+
+// Created by Charlie Mitchell
+// Copyright 2018, 2026
+
+-->
