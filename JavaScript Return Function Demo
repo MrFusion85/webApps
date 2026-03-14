@@ -1,0 +1,34 @@
+<!-- Copyright Charlie Mitchell 2018, 2026 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+
+
+
+<!--
+
+CSS:
+
+
+
+
+
+JavaScript:
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+var x = myFunction(5, 6); 
+document.write(x);
+
+-->
